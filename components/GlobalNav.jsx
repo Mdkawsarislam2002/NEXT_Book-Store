@@ -1,5 +1,3 @@
-import "@styles/style.css";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +8,12 @@ const GlobalNav = () => {
     <>
       <nav className="py-4 2xl:px-6">
         <div className="container flex items-center justify-between">
-          <Image src={logo} className="w-32" alt="learn with sumit " />
+          <Image
+            src={logo}
+            className="w-32"
+            alt="learn with sumit "
+            priority="high"
+          />
 
           <ul className="hidden md:flex items-center space-x-6">
             <Link

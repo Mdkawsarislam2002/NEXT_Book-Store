@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/yarn.lock
 /.pnp
 .pnp.js
+
+server/node_modules
+server/yarn.lock
 
 # testing
 /coverage

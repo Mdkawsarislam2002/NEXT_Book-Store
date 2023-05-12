@@ -1,6 +1,9 @@
 import GlobalNav from "@components/GlobalNav";
-import ReduxProvider from "@components/ReduxProvider";
+import ReduxProvider from "@components/ReduxProvidor";
+
+//  styles
 import "@styles/globals.css";
+import "@styles/style.scss";
 
 export const metadata = {
   title: "lws book store ",
@@ -11,10 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <ReduxProvider> */}
-        <GlobalNav />
-        {children}
-        {/* </ReduxProvider> */}
+        <ReduxProvider>
+          <GlobalNav />
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );
