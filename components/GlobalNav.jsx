@@ -1,5 +1,3 @@
-import "@styles/style.css";
-
 import Image from "next/image";
 import Link from "next/link";
 
