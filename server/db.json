@@ -26,6 +26,15 @@
       "rating": 4,
       "featured": true,
       "id": 4
+    },
+    {
+      "name": "Data Structures and Algorithms Using C ",
+      "author": "Amitava Nag",
+      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+      "price": "100",
+      "rating": "4",
+      "featured": false,
+      "id": 5
     }
   ]
 }

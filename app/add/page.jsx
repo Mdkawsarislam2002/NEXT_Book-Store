@@ -1,5 +1,10 @@
+import AddBooks from "@components/AddBooks";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <AddBooks />
+    </div>
+  );
 };
 
 export default page;

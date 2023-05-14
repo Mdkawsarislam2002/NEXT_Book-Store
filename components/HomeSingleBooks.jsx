@@ -1,6 +1,8 @@
+import Image from "next/image";
 import React from "react";
 
-const HomeSingleBooks = () => {
+const HomeSingleBooks = ({ data }) => {
+  const { name, author, thumbnail, price, rating, featured, id } = data;
   return (
     <>
       <div>
@@ -10,9 +12,18 @@ const HomeSingleBooks = () => {
             src="https://m.media-amazon.com/images/P/B07DZ86WP7.01._SCLZZZZZZZ_SX500_.jpg"
             alt="book"
           /> */}
+
+          <Image
+            src={thumbnail}
+            alt="name"
+            width={170}
+            height={240}
+            className="h-[240px] w-[170px] object-cover"
+          />
+
           <div className="flex-1 h-full pr-2 pt-2 flex flex-col">
             <div className="flex items-center justify-between">
-              <span className="lws-badge">featured</span>
+              {featured && <span className="lws-badge">featured</span>}
               <div className="text-gray-500 space-x-2 flex">
                 {/* <Link to={`edit/${"id"}`} className="lws-edit"> */}
                 <svg
@@ -48,9 +59,7 @@ const HomeSingleBooks = () => {
             </div>
 
             <div className="space-y-2 mt-4 h-full">
-              <h4 className="lws-book-name">
-                Life Hurts: A {"Doctor's "} Personal Journey Through Anorexia
-              </h4>
+              <h4 className="lws-book-name">{name}</h4>
               <p className="lws-author">Dr Elizabeth McNaught</p>
               <div className="lws-stars">
                 <svg viewBox="0 0 20 20" fill="currentColor" className="star">

@@ -1,3 +1,5 @@
+import RenderBooks from "./RenderBooks";
+
 const Home = () => {
   return (
     <>
@@ -12,9 +14,7 @@ const Home = () => {
                 <button className="lws-filter-btn">Featured</button>
               </div>
             </div>
-            <div className="space-y-6 md:space-y-0 md:grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {/* <HomeSingleBooks /> */}
-            </div>
+            <RenderBooks />
           </div>
         </main>
       </div>
