@@ -1,6 +1,6 @@
 import React from "react";
 
-const Edit = () => {
+const Edit = ({ id }) => {
   return (
     <>
       <main className="py-6 2xl:px-6">
@@ -9,7 +9,7 @@ const Edit = () => {
             <h4 className="mb-8 text-xl font-bold text-center">Edit</h4>
             <form className="book-form">
               <div className="space-y-2">
-                <label htmlFor="lws-bookName">Book Name</label>
+                <label htmlFor="lws-bookName">Book Name of ID </label>
                 <input
                   required
                   className="text-input"

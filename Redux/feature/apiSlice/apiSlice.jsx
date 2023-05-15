@@ -40,9 +40,9 @@ const apiSlice = createApi({
         url: `books/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: (result, error, { id }) => [
+      invalidatesTags: (result, error, arg) => [
         ["Books"],
-        { type: "singleBook", id },
+        { type: "singleBook", arg },
       ],
     }),
 

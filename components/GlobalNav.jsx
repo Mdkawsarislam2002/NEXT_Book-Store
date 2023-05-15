@@ -8,13 +8,14 @@ const GlobalNav = () => {
     <>
       <nav className="py-4 2xl:px-6">
         <div className="container flex items-center justify-between">
-          <Image
-            src={logo}
-            className="w-32"
-            alt="learn with sumit "
-            priority="high"
-          />
-
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              className="w-32"
+              alt="learn with sumit "
+              priority="high"
+            />
+          </Link>
           <ul className="hidden md:flex items-center space-x-6">
             <Link
               href={"/"}

@@ -132,7 +132,6 @@ const AddBooks = () => {
                   onChange={(e) => FormDataHandler(e.target.value, "featured")}
                 />
                 <label htmlFor="lws-featured" className="ml-2 text-sm">
-                  {" "}
                   This is a featured book{" "}
                 </label>
               </div>
