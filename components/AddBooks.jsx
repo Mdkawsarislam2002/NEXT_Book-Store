@@ -41,9 +41,6 @@ const AddBooks = () => {
     e.preventDefault();
 
     addBook({ name, author, thumbnail, price, rating, featured });
-    if (isError) {
-      console.log(error);
-    }
   };
 
   return (

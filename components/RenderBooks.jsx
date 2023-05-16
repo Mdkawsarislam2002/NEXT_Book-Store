@@ -1,13 +1,16 @@
 "use client";
 
+import { useSelector } from "react-redux";
 //  components
 import HomeSingleBooks from "./HomeSingleBooks";
 import { useGetBooksQuery } from "@Redux/feature/apiSlice/apiSlice";
 
 const RenderBooks = () => {
+  const { sortBy, searchValue } = useSelector((state) => state?.filter);
+
   const { data, isSuccess, error } = useGetBooksQuery({
-    filter: "all",
-    searchQuery: "",
+    filter: sortBy,
+    searchQuery: searchValue,
   });
 
   console.warn(error);

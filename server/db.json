@@ -10,11 +10,11 @@
       "id": 1
     },
     {
-      "name": "The Last Thing He Told Me: A Novel",
-      "author": "Laura Dave",
-      "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
-      "price": 13.99,
-      "rating": 4,
+      "name": "kotlar on marketing ",
+      "author": "philip kotlar ",
+      "thumbnail": "https://th.bing.com/th/id/R.517d219cd81ac0ba11f531ed48f6325c?rik=MLjpWAXwo1JFrA&pid=ImgRaw&r=0",
+      "price": "300",
+      "rating": "5",
       "featured": false,
       "id": 2
     },
@@ -28,13 +28,22 @@
       "id": 4
     },
     {
-      "name": "Decoding DSA: The Ultimate Parental Guide to Success in Direct School ...",
-      "author": "KYE KOK LEONG",
-      "thumbnail": "https://th.bing.com/th/id/OIP.HbEDauwcUg9DTEGL29pvtwHaKd?pid=ImgDet&rs=1",
-      "price": "1000",
-      "rating": "4",
-      "featured": false,
-      "id": 5
+      "name": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "thumbnail": "https://gleegmjournal.com/wp-content/uploads/2021/04/rich-dad-poor-dad-cover.jpg",
+      "price": "500",
+      "rating": "5",
+      "featured": true,
+      "id": 6
+    },
+    {
+      "name": "হাতে কলমে জাভাস্ক্রিপ্ট  ",
+      "author": "জুনায়েদ আহমেদ",
+      "thumbnail": "https://wafilife-media.wafilife.com/uploads/2022/06/hate-kolome-javascript.png",
+      "price": "200",
+      "rating": "5",
+      "featured": true,
+      "id": 8
     }
   ]
 }

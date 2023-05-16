@@ -21,7 +21,8 @@ const apiSlice = createApi({
     }),
     getSingleBooks: builder.query({
       query: (id) => `books/${id}`,
-      providesTags: (result, error, id) => [{ type: "singleBook", id }],
+      // providesTags: (result, error, id) => [{ type: "singleBook", id: id }],
+      providesTags: (result, error, id) => [{ type: "singleBook", id: id }],
     }),
     updateBook: builder.mutation({
       query: ({ id, data }) => ({
@@ -29,9 +30,9 @@ const apiSlice = createApi({
         method: "PATCH",
         body: data,
       }),
-      invalidatesTags: (result, error, { id }) => [
-        ["Books"],
-        { type: "singleBook", id },
+      invalidatesTags: (result, error, arg) => [
+        "Books",
+        { type: "singleBook", id: arg.id },
       ],
     }),
 
@@ -41,8 +42,8 @@ const apiSlice = createApi({
         method: "DELETE",
       }),
       invalidatesTags: (result, error, arg) => [
-        ["Books"],
-        { type: "singleBook", arg },
+        "Books",
+        { type: "singleBook", id: arg.id },
       ],
     }),
 
